@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      body {
+        height: 100vh;
+        border: solid 1px maroon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body > div {
+        background: red;
+        height: 25vh;
+        width: 50vh;
+        display: flex;
+        border: solid 1px grey;
+      }
+
+      div > div {
+        flex: 1;
+      }
+
+      div > div:nth-child(2){
+        background: white;
+      }
+
+      div > div:first-child {
+        background: blue;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
